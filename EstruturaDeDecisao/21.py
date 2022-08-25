@@ -7,10 +7,10 @@
 # Exemplo 1: Para sacar a quantia de 256 reais, o programa fornece duas notas de 100, uma nota de 50, uma nota de 5 e uma nota de 1;
 # Exemplo 2: Para sacar a quantia de 399 reais, o programa fornece três notas de 100, uma nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.
 print("Olá, bem vindo ao caixa eletronico!")
-valor = int(input("qual valor desejado: "))
-if valor <= 9 and valor >= 601:
+valor = float(input("qual valor desejado: "))
+if valor <= 9 or valor >= 601:
     print("valor fora da possibilidade de transação:")
-    valor = int(input("Digite o valor: "))
+    valor = float(input("Digite o valor: "))
     if valor >= 10 or valor <= 600:
         cent = valor / 100
         cinq = valor / 50
